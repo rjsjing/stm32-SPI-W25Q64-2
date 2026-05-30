@@ -39,9 +39,9 @@ fix/<name>        ← 修复
 ```
 <type>: <简短描述>
 
-feat: 实现MySPI字节读写
+feat: 实现SPI硬件读写
 fix: 修正W25Q64扇区擦除地址
-docs: 更新CLAUD.md
+docs: 更新CLAUDE.md
 ```
 
 ### 不提交的文件（已在 .gitignore）
@@ -52,7 +52,7 @@ Objects/  Listings/   ← 应加入 .gitignore
 
 ## 编码规范
 
-- **函数命名**: `模块名_操作()`，如 `MySPI_Init()`, `W25Q64_ReadID()`
+- **函数命名**: `模块名_操作()`，如 `SPI_Init()`, `W25Q64_ReadID()`
 - **禁止魔法数字**: GPIO引脚、外设地址、命令码 必须用 `#define` 宏
 - **分组**: 所有 `#define` 放在对应 `.h` 文件中
 - **SPI引脚（STM32 硬件 SPI1）**:
